@@ -8,10 +8,6 @@ const app = express();
 
 app.use(express.json());
 
-export const listenFor = ["copies", "feet", "feet pics"];
-
-export const responses = ["couldn't be me"];
-
 const PORT = process.env.PORT || 3000;
 async function startApp() {
   try {

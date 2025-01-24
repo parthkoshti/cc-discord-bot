@@ -36,6 +36,12 @@ export const responsePairs = [
     ],
   },
   {
+    listenFor: ["butt pimples"],
+    responses: [
+      "I think you might want to watch this: https://www.youtube.com/clip/UgkxTaqF5tRsPPbDW-qOzVOvKAWFcRkvpg82",
+    ],
+  },
+  {
     listenFor: ["steam"],
     responses: [
       "I will literally steal your steam and you will literally cry as I do it.",
@@ -49,12 +55,6 @@ export const responsePairs = [
   {
     listenFor: ["copypasta"],
     responses: ["Mmmmm yes, pasta. Did you know I'm actually italian? 🤌"],
-  },
-  {
-    listenFor: ["im new", "i'm new"],
-    responses: [
-      "Welcome to the server, newbie. Go to #how-to-use-the-cc and #how-to-start-copywriting to get started! Do that first and then drop any other questions you have in #questions",
-    ],
   },
   {
     listenFor: ["crazy"],

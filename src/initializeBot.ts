@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits, Events } from "discord.js";
 import { responsePairs } from "./responsePairs";
 import { reactMentions } from "./reactMentions";
+import { noobWelcomer } from "./noobWelcomer";
 
 export const discordClient = new Client({
   intents: [
@@ -16,15 +17,11 @@ export async function InitializeBot() {
   });
 
   discordClient.on(Events.MessageCreate, async (message) => {
-    console.log(
-      `Received message from ${message.author.tag}: ${message.content}`
-    );
-
     if (message.author.bot) return;
 
     const matchedPair = responsePairs.find((pair) =>
       pair.listenFor.some((keyword) => {
-        const regex = new RegExp(`\\b${keyword}\\b`, "i"); // Match whole word, case-insensitive
+        const regex = new RegExp(`\\b${keyword}\\b`, "i");
         return regex.test(message.content);
       })
     );
@@ -55,4 +52,6 @@ export async function InitializeBot() {
   discordClient.on(Events.Error, (error) => {
     console.error("Discord client error:", error);
   });
+
+  noobWelcomer();
 }

@@ -1,5 +1,6 @@
 import { Client, GatewayIntentBits, Events } from "discord.js";
 import { responsePairs } from "./responsePairs";
+import { reactMentions } from "./reactMentions";
 
 export const discordClient = new Client({
   intents: [
@@ -33,6 +34,20 @@ export async function InitializeBot() {
           Math.floor(Math.random() * matchedPair.responses.length)
         ];
       await message.reply(randomResponse);
+    }
+
+    const matchedReact = reactMentions.find((pair) =>
+      pair.listenFor.some((keyword) =>
+        message.content.toLowerCase().includes(keyword.toLowerCase())
+      )
+    );
+
+    if (matchedReact) {
+      const randomReaction =
+        matchedReact.reaction[
+          Math.floor(Math.random() * matchedReact.reaction.length)
+        ];
+      await message.react(randomReaction);
     }
   });
 

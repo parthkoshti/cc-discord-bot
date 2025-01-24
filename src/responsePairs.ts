@@ -44,6 +44,10 @@ export const responsePairs = [
     responses: ["Robot? I'm not a robot! You're a robot!"],
   },
   {
+    listenFor: ["copyasta"],
+    responses: ["Mmmmm yes, pasta. Did you know I'm actually italian? 🤌"],
+  },
+  {
     listenFor: ["crazy"],
     responses: [
       "Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.",

@@ -28,19 +28,5 @@ export async function memeResponses() {
         ];
       await message.reply(randomResponse);
     }
-
-    const matchedReact = reactMentions.find((pair) =>
-      pair.listenFor.some((keyword) =>
-        message.content.toLowerCase().includes(keyword.toLowerCase())
-      )
-    );
-
-    if (matchedReact) {
-      const randomReaction =
-        matchedReact.reaction[
-          Math.floor(Math.random() * matchedReact.reaction.length)
-        ];
-      await message.react(randomReaction);
-    }
   });
 }

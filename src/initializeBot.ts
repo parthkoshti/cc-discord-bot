@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits, Events } from "discord.js";
 import { noobWelcomer } from "./noobWelcomer";
 import { memeResponses } from "./memeResponses";
+import { autoReacts } from "./autoReacts";
 
 export const discordClient = new Client({
   intents: [
@@ -16,6 +17,7 @@ export async function InitializeBot() {
   });
 
   memeResponses();
+  autoReacts();
   noobWelcomer();
 
   discordClient.on(Events.Error, (error) => {

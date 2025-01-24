@@ -1,10 +1,11 @@
 export const responsePairs = [
   {
     listenFor: ["copies"],
-    responses: [
-      "couldn't be me",
-      "For the love of god, the plural of copy is still copy.",
-    ],
+    responses: ["For the love of god, the plural of copy is still copy."],
+  },
+  {
+    listenFor: ["broke"],
+    responses: ["couldn't be me"],
   },
   {
     listenFor: ["read"],
@@ -38,7 +39,7 @@ export const responsePairs = [
   {
     listenFor: ["butt pimples"],
     responses: [
-      "I think you might want to watch this: https://www.youtube.com/clip/UgkxTaqF5tRsPPbDW-qOzVOvKAWFcRkvpg82",
+      "I want you to watch this: https://www.youtube.com/clip/UgkxTaqF5tRsPPbDW-qOzVOvKAWFcRkvpg82",
     ],
   },
   {
@@ -59,7 +60,24 @@ export const responsePairs = [
   {
     listenFor: ["crazy"],
     responses: [
-      "Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.",
+      `Crazy? I was crazy once.
+They put me in a room.
+A rubber room.
+A rubber room with rats.
+They put me in a rubber room with rubber rats.
+Rubber rats? I hate rubber rats.
+They make me crazy.
+Crazy? I was crazy once.
+They put me in a room…`,
+      `Crazy? I was crazy once.
+They put me in a room.
+A rubber room.
+A rubber room with duckies.
+They put me in a rubber room with rubber duckies.
+Rubber rats? I hate rubber duckies.
+They make me crazy.
+Crazy? I was crazy once.
+They put me in a room…`,
     ],
   },
   {

@@ -1,6 +1,4 @@
 import { Client, GatewayIntentBits, Events } from "discord.js";
-import { responsePairs } from "./responsePairs";
-import { reactMentions } from "./reactMentions";
 import { noobWelcomer } from "./noobWelcomer";
 import { memeResponses } from "./memeResponses";
 
@@ -18,7 +16,6 @@ export async function InitializeBot() {
   });
 
   memeResponses();
-
   noobWelcomer();
 
   discordClient.on(Events.Error, (error) => {

@@ -2,6 +2,7 @@ import { Events } from "discord.js";
 import { discordClient } from "./initializeBot";
 import { responsePairs } from "./responsePairs";
 import { reactMentions } from "./reactMentions";
+import { probability } from "./probability";
 
 export async function memeResponses() {
   discordClient.on(Events.MessageCreate, async (message) => {

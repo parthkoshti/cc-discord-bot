@@ -57,6 +57,10 @@ export const responsePairs = [
     ],
   },
   {
+    listenFor: ["627633573519687699"],
+    responses: ["Hell yeah, get his ass 🔫"],
+  },
+  {
     listenFor: ["make money", "will ai"],
     responses: [
       `Nope. We're cooked, dude.

@@ -7,4 +7,8 @@ export const reactMentions = [
     listenFor: ["react"],
     reaction: [":bug:"],
   },
+  {
+    listenFor: ["ohio", "texas", "quebec"],
+    reaction: [":flag_ohio:988449104520695828"],
+  },
 ];

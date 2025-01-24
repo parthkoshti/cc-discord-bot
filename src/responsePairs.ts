@@ -13,7 +13,7 @@ export const responsePairs = [
     ],
   },
   {
-    listenFor: ["feet"],
+    listenFor: ["feet", "foot"],
     responses: [`mmmmmmmmmmm... feet 🦶`],
   },
   {
@@ -30,6 +30,23 @@ export const responsePairs = [
     listenFor: ["imagine"],
     responses: [
       "No thank you, I'd rather you imagine you're a good copywriter.",
+    ],
+  },
+  {
+    listenFor: ["steam"],
+    responses: [
+      "I will literally steal your steam and you will literally cry as I do it.",
+      "I'd like to see you touch some grass for once",
+    ],
+  },
+  {
+    listenFor: ["robot", "robots"],
+    responses: ["Robot? I'm not a robot! You're a robot!"],
+  },
+  {
+    listenFor: ["crazy"],
+    responses: [
+      "Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.",
     ],
   },
   {

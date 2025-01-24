@@ -20,7 +20,7 @@ export const responsePairs = [
     ],
   },
   {
-    listenFor: [" 69 "],
+    listenFor: ["69"],
     responses: ["Nice"],
   },
   {
@@ -59,6 +59,12 @@ export const responsePairs = [
   {
     listenFor: ["627633573519687699"],
     responses: ["Hell yeah, get his ass 🔫"],
+  },
+  {
+    listenFor: ["chatgpt"],
+    responses: [
+      "Literally how I generate Copy That Twitter posts. In fact, all my copywriting is done by ChatGPT.",
+    ],
   },
   {
     listenFor: ["make money", "will ai"],

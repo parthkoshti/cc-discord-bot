@@ -23,9 +23,10 @@ export async function InitializeBot() {
     if (message.author.bot) return;
 
     const matchedPair = responsePairs.find((pair) =>
-      pair.listenFor.some((keyword) =>
-        message.content.toLowerCase().includes(keyword.toLowerCase())
-      )
+      pair.listenFor.some((keyword) => {
+        const regex = new RegExp(`\\b${keyword}\\b`, "i"); // Match whole word, case-insensitive
+        return regex.test(message.content);
+      })
     );
 
     if (matchedPair) {

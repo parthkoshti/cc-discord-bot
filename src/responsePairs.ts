@@ -51,6 +51,12 @@ export const responsePairs = [
     responses: ["Mmmmm yes, pasta. Did you know I'm actually italian? 🤌"],
   },
   {
+    listenFor: ["im new", "i'm new"],
+    responses: [
+      "Welcome to the server, newbie. Go to #how-to-use-the-cc and #how-to-start-copywriting to get started! Do that first and then drop any other questions you have in #questions",
+    ],
+  },
+  {
     listenFor: ["crazy"],
     responses: [
       "Crazy? I Was Crazy Once. They Locked Me In A Room. A Rubber Room. A Rubber Room With Rats. And Rats Make Me Crazy.",

@@ -44,7 +44,7 @@ export const responsePairs = [
     responses: ["Robot? I'm not a robot! You're a robot!"],
   },
   {
-    listenFor: ["copyasta"],
+    listenFor: ["copypasta"],
     responses: ["Mmmmm yes, pasta. Did you know I'm actually italian? 🤌"],
   },
   {

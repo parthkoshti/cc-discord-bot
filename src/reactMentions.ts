@@ -11,4 +11,8 @@ export const reactMentions = [
     listenFor: ["ohio", "texas", "quebec"],
     reaction: [":flag_ohio:988449104520695828"],
   },
+  {
+    listenFor: ["blue"],
+    reaction: [":funke:888497923447488584"],
+  },
 ];

@@ -1,7 +1,7 @@
 export const reactMentions = [
   {
     listenFor: ["anime"],
-    reaction: ["👍"],
+    reaction: [":virgin:859505833339387904"],
   },
   {
     listenFor: ["react"],

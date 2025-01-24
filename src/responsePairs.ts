@@ -14,10 +14,13 @@ export const responsePairs = [
   },
   {
     listenFor: ["feet", "foot"],
-    responses: [`mmmmmmmmmmm... feet 🦶`],
+    responses: [
+      `mmmmmmmmmmm... feet 🦶`,
+      "Find something else to be into. Preferably far away from this Discord.",
+    ],
   },
   {
-    listenFor: ["69"],
+    listenFor: [" 69 "],
     responses: ["Nice"],
   },
   {

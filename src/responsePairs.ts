@@ -4,9 +4,11 @@ export const responsePairs = [
     responses: ["For the love of god, the plural of copy is still copy."],
   },
   {
-    listenFor: ["stocks"],
+    listenFor: ["stocks", "stock"],
     probability: 1,
-    responses: ["Yeah this stock has been huge lately, check it out: $URMOM"],
+    responses: [
+      "Stocks are a great investment. I do have a favorite—it only gets bigger each quarter. Check it out: $URMOM",
+    ],
   },
   {
     listenFor: ["broke"],

@@ -8,6 +8,10 @@ export const responsePairs = [
     responses: ["You want the truth? You can't handle the truth."],
   },
   {
+    listenFor: ["ftc"],
+    responses: ["Nothing I say is financial advice."],
+  },
+  {
     listenFor: ["stocks", "stock"],
     probability: 1,
     responses: [

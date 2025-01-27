@@ -106,6 +106,10 @@ They put me in a room…`,
     ],
   },
   {
+    listenFor: ["french"],
+    responses: ["Fr*nch. This is a Christian server.", "🥖"],
+  },
+  {
     listenFor: ["make money", "will ai"],
     responses: [
       `Nope. We're cooked, dude.

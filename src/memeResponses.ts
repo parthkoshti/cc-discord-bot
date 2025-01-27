@@ -7,6 +7,13 @@ export async function memeResponses() {
   discordClient.on(Events.MessageCreate, async (message) => {
     if (message.author.bot) return;
 
+    if (message.content.length > 900) {
+      await message.react(":cantread:848578107375091752");
+
+      await message.reply("Bruh no way I'm reading all that");
+      return;
+    }
+
     const matchedPair = responsePairs.find((pair) =>
       pair.listenFor.some((keyword) => {
         const regex = new RegExp(`\\b${keyword}\\b`, "i");

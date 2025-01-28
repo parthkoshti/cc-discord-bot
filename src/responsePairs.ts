@@ -100,6 +100,13 @@ They put me in a room…`,
     responses: ["Hell yeah, get his ass 🔫"],
   },
   {
+    listenFor: ["jelqing"],
+    responses: [
+      "Wow okay so I looked it up and it's a word. Step outside, the sun is good for you",
+      "Didn't Jon make a video on this?",
+    ],
+  },
+  {
     listenFor: ["chatgpt"],
     responses: [
       "Literally how I generate Copy That Twitter posts. In fact, all my copywriting is done by ChatGPT.",

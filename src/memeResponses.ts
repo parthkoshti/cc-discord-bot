@@ -2,6 +2,8 @@ import { Events } from "discord.js";
 import { discordClient } from "./initializeBot";
 import { responsePairs } from "./responsePairs";
 import { probability } from "./probability";
+import { isRateLimited } from "./rateLimit";
+import { logResponse } from "./logResponse";
 
 export async function memeResponses() {
   discordClient.on(Events.MessageCreate, async (message) => {
@@ -10,7 +12,7 @@ export async function memeResponses() {
     if (message.content.length > 900) {
       await message.react(":cantread:848578107375091752");
 
-      await message.reply("Bruh no way I'm reading all that");
+      await message.reply("Bruh ain't no way I'm reading all that");
       return;
     }
 
@@ -29,10 +31,16 @@ export async function memeResponses() {
 
       const sendMeme = probability(matchedPair.probability ?? 0.5);
       if (!sendMeme) {
-        console.log("No meme for you!");
+        console.log("Chance miss!");
+        return;
+      }
+
+      if (await isRateLimited(3 * 60 * 1000)) {
+        await message.reply("Rate limit exceeded");
         return;
       }
       await message.reply(randomResponse);
+      await logResponse(randomResponse, matchedPair.listenFor[0]);
     }
   });
 }

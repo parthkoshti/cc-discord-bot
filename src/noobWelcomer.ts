@@ -13,8 +13,6 @@ export async function noobWelcomer() {
       })
     );
 
-    console.log("Noob pair:", noobPair);
-
     if (!noobPair) {
       console.log("Noob pair not found");
       return;

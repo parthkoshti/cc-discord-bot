@@ -74,6 +74,7 @@ export const responsePairs = [
   },
   {
     listenFor: ["crazy"],
+    probability: 0.15,
     responses: [
       `Crazy? I was crazy once.
 They put me in a room.

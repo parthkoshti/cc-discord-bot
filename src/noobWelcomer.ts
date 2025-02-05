@@ -28,7 +28,7 @@ export async function noobWelcomer() {
     console.log(userJoinTime);
 
     const isNewUser =
-      new Date(userJoinTime!).getTime() > Date.now() - 1000 * 60 * 60 * 24 * 30;
+      new Date(userJoinTime!).getTime() > Date.now() - 1000 * 60 * 60 * 24 * 14;
 
     if (!isNewUser) {
       console.log("User is not new");

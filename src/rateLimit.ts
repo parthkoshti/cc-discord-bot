@@ -14,7 +14,7 @@ export async function isRateLimited(msTimeout: number) {
     const now = new Date();
     const timeDifference = now.getTime() - lastMessage.timestamp.getTime();
     if (timeDifference < msTimeout) {
-      console.log("Rate limit exceeded");
+      console.log("Rate limited!");
       return true;
     }
   } else {

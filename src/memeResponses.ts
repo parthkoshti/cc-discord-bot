@@ -36,9 +36,10 @@ export async function memeResponses() {
       }
 
       if (await isRateLimited(3 * 60 * 1000)) {
-        console.log("Rate limited!");
         return;
       }
+      console.log("Chance hit! Keyword: " + matchedPair.listenFor[0]);
+
       await message.reply(randomResponse);
       await logResponse(randomResponse, matchedPair.listenFor[0]);
     }

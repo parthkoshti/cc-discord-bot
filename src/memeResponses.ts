@@ -36,7 +36,7 @@ export async function memeResponses() {
       }
 
       if (await isRateLimited(3 * 60 * 1000)) {
-        await message.reply("Rate limit exceeded");
+        console.log("Rate limited!");
         return;
       }
       await message.reply(randomResponse);

@@ -14,7 +14,6 @@ export async function noobWelcomer() {
     );
 
     if (!noobPair) {
-      console.log("Noob pair not found");
       return;
     }
 
